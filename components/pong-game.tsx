@@ -7,9 +7,9 @@ const PADDLE_WIDTH = 25
 const BALL_RADIUS = 10
 const CANVAS_HEIGHT = 500
 const CANVAS_WIDTH = 300
-const BALL_SPEED = 0.002
+const BALL_SPEED = 0.004
 const COMPUTER_SPEED = 1
-const PLAYER_SPEED = 0.1
+const PLAYER_SPEED = 0.05
 
 export default function Game() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
