@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PongGame from '../components/pong-game'
 
 
