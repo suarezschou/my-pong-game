@@ -7,7 +7,7 @@ const PADDLE_WIDTH = 25
 const BALL_RADIUS = 10
 const CANVAS_HEIGHT = 500
 const CANVAS_WIDTH = 300
-const BALL_SPEED = 0.02
+const BALL_SPEED = 0.002
 const COMPUTER_SPEED = 1
 const PLAYER_SPEED = 0.1
 
@@ -125,8 +125,7 @@ export default function Game() {
 
       animationFrameId = requestAnimationFrame(gameLoop)
     }
-
-    
+  
 
     const resetBall = () => {
       setBall({
@@ -172,7 +171,7 @@ export default function Game() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <h1 className="text-5xl font-bold text-yellow-900 mb-4">Pong Game</h1>
-      <p className="text-cyan-400 text-xl m-10">
+      <p className="text-white text-2xl m-10">
         Use 'Q' to move up, 'E' to move down, and SPACE to start the ball
       </p>
       <canvas

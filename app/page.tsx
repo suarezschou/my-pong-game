@@ -1,11 +1,8 @@
 import PongGame from '../components/pong-game'
 
-
-
 export default function Home() {
   return (
-    
-        <div>
+        <div className='bg-black'>
           <PongGame />
         </div>
   )}
