@@ -66,7 +66,7 @@ export default function Game() {
           (ball.x + BALL_RADIUS > canvas.width - PADDLE_WIDTH && ball.y > computerPaddle.y && ball.y < computerPaddle.y + PADDLE_HEIGHT)
         ) {
           setBall(prevBall => {
-            let newDx = -prevBall.dx;
+            const newDx = -prevBall.dx;
             let newX = prevBall.x;
 
         // Adjust ball position to prevent sticking
@@ -83,7 +83,7 @@ export default function Game() {
         // Ball collision with top and bottom of canvas
         if (ball.y - BALL_RADIUS < 0 || ball.y + BALL_RADIUS > canvas.height) {
           setBall(prevBall => {
-            let newDy = -prevBall.dy;
+            const newDy = -prevBall.dy;
             let newY = prevBall.y;
 
             // Adjust ball position to prevent sticking
